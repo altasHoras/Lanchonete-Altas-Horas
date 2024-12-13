@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="CSS/carrinho.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body style="
+    display: flex; 
+    flex-direction: column; 
+    height: 100vh; 
+    margin: 0; 
+    background-color: #FFDEAD; 
+    font-family: Arial, sans-serif; 
+    color: #333; 
+    line-height: 1.6;
+">
+    <header>
+        <h1>CARRINHO DE COMPRAS</h1>
+        <nav>
+            <ul>
+                <li><a href="menu.html">Cardápio</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="carrinho.html" class="ativo">Carrinho</a></li>
+                <li style="margin-top: 10px;"><a href="index.html">Sair</a></li>
+            </ul>    
+        </nav>        
+    </header>
+
+    <main>
+        <br>
+        <div class="carrinho" id="carrinho">
+            <div id="lista-carrinho"></div>
+            <div class="total">
+                <span>Total: R$ <span id="valor-total">0,00</span></span>
+            </div>
+            <div class="botoes">
+                <button id="btn-continuar" onclick="window.location.href='menu.html'">Continuar Comprando</button>
+                <button onclick="window.location.href='finalizar.html'">Finalizar Compra</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer style="
+        text-align: center; 
+        background: #333; 
+        padding: 10px; 
+        color: white; 
+        margin-top: auto;
+    ">
+        <p>&copy; 2024 Lanchonete Altas Horas. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="JS/script.js"></script>
+</body>
+</html>

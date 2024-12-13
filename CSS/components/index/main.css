@@ -1,0 +1,38 @@
+main{
+    text-align: center;
+    flex: 1;
+}
+
+img {
+    border-bottom: solid 10px #ff0000;
+    box-shadow: 10px 10px 10px #DC143C;
+}
+
+h2{
+    background-color:#DC143C;
+    padding: 5px;
+    box-shadow: 10px 10px 10px #fff;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+button {
+    width: 200px;
+    height: 70px;
+    
+}
+
+a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    
+}
+
+
+button:hover{ 
+    transition: 0.9s;
+    scale: 1.1;
+}
+

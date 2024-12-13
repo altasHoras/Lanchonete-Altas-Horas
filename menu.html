@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Lanchonete Altas Horas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/components/paginas/header.css">
+    <link rel="stylesheet" href="./CSS/components/paginas/menu/corpo.css">
+</head>
+<body style="background-color: #FFDEAD;">
+
+    <!--CABEÇALHO-->
+    <header>
+        <h1>Lanchonete Altas Horas</h1>
+        <nav>
+            <ul>
+                <li><a href="menu.html" class="ativo">Cardápio</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li style="margin-top: 10px;"><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h2>MENU</h2>
+
+    <!--CORPO-->
+    <main>
+        <section style="height: auto;">
+            <h2>Big Lanches Família</h2>
+            <div class="container-fluid d-flex flex-wrap">
+                <!-- Card Big X-Burguer -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://bigx.com.br/wp-content/uploads/2017/02/artigo3-1.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Big X-Burguer">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Big X-Burguer</h5>
+                        <p class="card-text" style="margin-top: 10px;">R$ 30,00</p>
+                        
+                        <!-- Acordeão para ingredientes -->
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesBigXBurguer" aria-expanded="false" aria-controls="ingredientesBigXBurguer" style="width: 130px;" class="mb-0">
+                            Ver Ingredientes
+                        </button>
+                        <div class="collapse" id="ingredientesBigXBurguer">
+                            <div class="card card-body" style="text-align: left; padding: 10px;">
+                                3 hamburguers, Presunto, Queijo, Mortadela, Maionese, Pão de leite, Batata frita
+                            </div>
+                        </div>
+                        <button class="adicionar" data-nome="Big X-Burguer" data-preco="30.00" onclick="adicionarAoCarrinho('Big X-Burguer', 30)">COMPRAR</button>
+                    </div>
+                </div>
+            
+                <!-- Card Big X-Salada -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSOuvRA0n_VswlVd_ZIhouNkplrhSLcYBALQ&s" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Big X-Salada">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Big X-Salada</h5>
+                        <p class="card-text" style="margin-top: 10px;">R$ 38,00</p>
+                        
+                        <!-- Acordeão para ingredientes -->
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesBigXSalada" aria-expanded="false" aria-controls="ingredientesBigXSalada" style="width: 130px;" class="mb-0">
+                            Ver Ingredientes
+                        </button>
+                        <div class="collapse" id="ingredientesBigXSalada">
+                            <div class="card card-body" style="text-align: left; padding: 10px;">
+                                3 hamburguers, Presunto, Queijo, Mortadela, Maionese, Alface, Tomate, Pão de leite, Batata frita
+                            </div>
+                        </div>
+                        <button class="adicionar" data-nome="Big X-Salada" data-preco="38.00" onclick="adicionarAoCarrinho('Big X-Salada', 38)">COMPRAR</button>
+                    </div>
+                </div>
+            
+                <!-- Card Big X-Calabresa -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/167750233563fca77f2fd90_75_75.jpeg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Big X-Calabresa">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Big X-Calabresa</h5>
+                        <p class="card-text" style="margin-top: 10px;">R$ 40,00</p>
+                        
+                        <!-- Acordeão para ingredientes -->
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesBigXCalabresa" aria-expanded="false" aria-controls="ingredientesBigXCalabresa" style="width: 130px;" class="mb-0">
+                            Ver Ingredientes
+                        </button>
+                        <div class="collapse" id="ingredientesBigXCalabresa">
+                            <div class="card card-body" style="text-align: left; padding: 10px;">
+                                3 hamburguers, Presunto, Queijo, Mortadela, Calabresa, Maionese, Pão de leite, Batata frita
+                            </div>
+                        </div>
+                        <button class="adicionar" data-nome="Big X-Calabresa" data-preco="40.00" onclick="adicionarAoCarrinho('Big X-Calabresa', 40)" style="width: 130px;">
+                            COMPRAR
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://bigx.com.br/wp-content/uploads/2021/09/Smash-Cheddar-Bacon.png" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Big X-Bacon">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Big X-Bacon</h5>
+                        <p class="card-text" style="margin-top: 10px;">R$ 48,00</p>
+                        
+                        <!-- Acordeão para ingredientes -->
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesBigXBacon" aria-expanded="false" aria-controls="ingredientesBigXBacon" style="width: 130px;" class="mb-0">
+                            Ver Ingredientes
+                        </button>
+                        <div class="collapse" id="ingredientesBigXBacon">
+                            <div class="card card-body" style="text-align: left; padding: 10px;">
+                                3 hamburguers, Presunto, Queijo, Mortadela, Bacon, Maionese, Pão de leite, Batata frita
+                            </div>
+                        </div>
+                        <button class="adicionar" data-nome="Big X-Bacon" data-preco="48.00" onclick="adicionarAoCarrinho('Big X-Bacon', 48)" style="width: 130px;">
+                            COMPRAR
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="card" style="width: 18rem;">
+                    <img src="https://bigx.com.br/wp-content/uploads/2017/02/artigo3-1.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Big X-Tudo">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Big X-Tudo</h5>
+                        <p class="card-text" style="margin-top: 10px;">R$ 60,00</p>
+                        
+                        <!-- Acordeão para ingredientes -->
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesBigXTudo" aria-expanded="false" aria-controls="ingredientesBigXTudo" style="width: 130px;" class="mb-0">
+                            Ver Ingredientes
+                        </button>
+                        <div class="collapse" id="ingredientesBigXTudo">
+                            <div class="card card-body" style="text-align: left; padding: 10px;">
+                                4 hamburguers, Presunto, Queijo, Calabresa, Bacon, Mortadela, Maionese, Pão de leite, Batata frita
+                            </div>
+                        </div>
+                        <button class="adicionar" data-nome="Big X-Tudo" data-preco="60.00" onclick="adicionarAoCarrinho('Big X-Tudo', 60)" style="width: 130px;">
+                            COMPRAR
+                        </button>
+                    </div>
+                </div>                
+            </div>                        
+        </section>
+    </main>
+
+    <!--MAIN-->
+    <main>
+        <section>
+            <h2>Lanches Tradicionais </h2>
+
+             <!--div-->
+             <div class="container-fluid d-flex flex-wrap">
+                    <!-- Card X-Burguer -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNQ_JtI1GQHJYC4P9NcEnKX7ia48WpFf7VGTnPvqklkUvbxhr6vKEeONZvSRmhw6pI6Dw&usqp=CAU" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="X-Burguer">
+                            <div class="card-body" style="text-align: center;">
+                                <h5 class="card-title">X-Burguer</h5>
+                                <p class="card-text" style="margin-top: 20px;">R$ 13,00</p>
+                                <button type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesXBurguer" aria-expanded="false" aria-controls="ingredientesXBurguer" style="width: 130px;" class="mb-0">
+                                    Ver Ingredientes
+                                </button>
+                                <div class="collapse" id="ingredientesXBurguer">
+                                    <div class="card card-body" style="text-align: left; padding: 10px;">
+                                        2 hamburguers, Queijo, Maionese, Pão de leite
+                                    </div>
+                                </div>
+                                <button class="adicionar" data-nome="X-Burguer" data-preco="13.00" onclick="adicionarAoCarrinho('X-Burguer', 13.00)" style="width: 130px;">
+                                    COMPRAR
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card X-Salada -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://img.cybercook.com.br/receitas/151/x-salada-3.jpeg?w=350&h=230&fit=crop" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="X-Salada">
+                            <div class="card-body" style="text-align: center;">
+                                <h5 class="card-title">X-Salada</h5>
+                                <p class="card-text" style="margin-top: 20px;">R$ 15,00</p>
+                                <button type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesXSalada" aria-expanded="false" aria-controls="ingredientesXSalada" style="width: 130px;" class="mb-0">
+                                    Ver Ingredientes
+                                </button>
+                                <div class="collapse" id="ingredientesXSalada">
+                                    <div class="card card-body" style="text-align: left; padding: 10px;">
+                                        2 hamburguers, Queijo, Maionese, Alface, Tomate, Pão de leite
+                                    </div>
+                                </div>
+                                <button class="adicionar" data-nome="X-Salada" data-preco="15.00" onclick="adicionarAoCarrinho('X-Salada', 15.00)" style="width: 130px;">
+                                    COMPRAR
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Card X-Egg -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://sachefmio.blob.core.windows.net/fotos/x-egg-73519.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="X-Egg">
+                            <div class="card-body" style="text-align: center;">
+                                <h5 class="card-title">X-Egg</h5>
+                                <p class="card-text" style="margin-top: 20px;">R$ 18,00</p>
+                                <button type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesXEgg" aria-expanded="false" aria-controls="ingredientesXEgg" style="width: 130px;" class="mb-0">
+                                    Ver Ingredientes
+                                </button>
+                                <div class="collapse" id="ingredientesXEgg">
+                                    <div class="card card-body" style="text-align: left; padding: 10px;">
+                                        2 hamburguers, Queijo, Ovo, Maionese, Pão de leite
+                                    </div>
+                                </div>
+                                <button class="adicionar" data-nome="X-Egg" data-preco="18.00" onclick="adicionarAoCarrinho('X-Egg', 18.00)" style="width: 130px;">
+                                    COMPRAR
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Card X-Calabresa -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIczmxHRq0UUX0g-755oXNjYLvQ-gUTYOUbA&s" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="X-Calabresa">
+                            <div class="card-body" style="text-align: center;">
+                                <h5 class="card-title">X-Calabresa</h5>
+                                <p class="card-text" style="margin-top: 20px;">R$ 18,00</p>
+                                <button type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesXCalabresa" aria-expanded="false" aria-controls="ingredientesXCalabresa" style="width: 130px;" class="mb-0">
+                                    Ver Ingredientes
+                                </button>
+                                <div class="collapse" id="ingredientesXCalabresa">
+                                    <div class="card card-body" style="text-align: left; padding: 10px;">
+                                        2 hamburguers, Queijo, Calabresa defumada, Maionese, Pão de leite
+                                    </div>
+                                </div>
+                                <button class="adicionar" data-nome="X-Calabresa" data-preco="18.00" onclick="adicionarAoCarrinho('X-Calabresa', 18.00)" style="width: 130px;">
+                                    COMPRAR
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Card X-Bacon -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://sachefmio.blob.core.windows.net/fotos/x-bacon-73518.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="X-Bacon">
+                            <div class="card-body" style="text-align: center;">
+                                <h5 class="card-title">X-Bacon</h5>
+                                <p class="card-text" style="margin-top: 20px;">R$ 20,00</p>
+                                <button type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesXBacon" aria-expanded="false" aria-controls="ingredientesXBacon" style="width: 130px;" class="mb-0">
+                                    Ver Ingredientes
+                                </button>
+                                <div class="collapse" id="ingredientesXBacon">
+                                    <div class="card card-body" style="text-align: left; padding: 10px;">
+                                        2 hamburguers, Queijo, Bacon, Maionese, Pão de leite
+                                    </div>
+                                </div>
+                                <button class="adicionar" data-nome="X-Bacon" data-preco="20.00" onclick="adicionarAoCarrinho('X-Bacon', 20.00)" style="width: 130px;">
+                                    COMPRAR
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                
+                <!--card-->
+                <div class="col-md-3 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://deliveryportodegalinhas.com.br/wp-content/uploads/2013/06/x-tudo-600x600.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="X-Tudo">
+                        <div class="card-body" style="text-align: center;">
+                            <h5 class="card-title">X-Tudo</h5>
+                            <p class="card-text" style="margin-top: 20px;">R$ 20,00</p>
+                            
+                            <!-- Acordeão para ingredientes -->
+                            <button type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesXTudo" aria-expanded="false" aria-controls="ingredientesXTudo" style="width: 130px;" class="mb-0">
+                                Ver Ingredientes
+                            </button>
+                            <div class="collapse" id="ingredientesXTudo">
+                                <div class="card card-body" style="text-align: left; padding: 10px;">
+                                    2 hamburguers, Queijo, Bacon, Calabresa, Ovo, Maionese, Alface, Tomate, Pão de leite
+                                </div>
+                            </div>
+                            
+                            <button class="adicionar" data-nome="X-Tudo" data-preco="20.00" onclick="adicionarAoCarrinho('X-Tudo', 20.00)" style="width: 130px;">
+                                COMPRAR
+                            </button>
+                        </div>
+                    </div>
+                </div>     
+             </div>   
+        </section>
+    </main>
+
+    <!--MAIN-->
+    <main>
+        <section>
+            <h2>Hot Dogs </h2>
+             <!--div-->
+             <div class="container-fluid">
+                <!-- Hot Dog Simples -->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://lanchoneteepizzariadadona.dicavaliosa.com.br/wp-content/uploads/2022/04/Hot-Dog-Simples-1.png" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Hot Dog Simples">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Hot Dog Simples</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 10,00</p>
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesHotDogSimples" aria-expanded="false" aria-controls="ingredientesHotDogSimples" style="width: 130px;" class="mb-0">
+                            Ver Ingredientes
+                        </button>
+                        <div class="collapse" id="ingredientesHotDogSimples">
+                            <div class="card card-body" style="text-align: left; padding: 10px;">
+                                1 salsicha, Milho, Ervilha, Catchup, Maionese, Molho especial, Batata palha, Pão
+                            </div>
+                        </div>
+                        <button class="adicionar" data-nome="Hot Dog Simples" data-preco="10.00" onclick="adicionarAoCarrinho('Hot Dog Simples', 10.00)" style="width: 130px;">
+                            COMPRAR
+                        </button>
+                    </div>
+                </div>
+            
+                <!-- Hot Dog Completo -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLm7k6Kc0aU6LgV0QXUef33YxQWOolrhALBA&s" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Hot Dog Completo">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Hot Dog Completo</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 12,00</p>
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesHotDogCompleto" aria-expanded="false" aria-controls="ingredientesHotDogCompleto" style="width: 130px;" class="mb-0">
+                            Ver Ingredientes
+                        </button>
+                        <div class="collapse" id="ingredientesHotDogCompleto">
+                            <div class="card card-body" style="text-align: left; padding: 10px;">
+                                1 salsicha, Milho, Ervilha, Catchup, Maionese, Molho especial, Batata palha, Pão
+                            </div>
+                        </div>
+                        <button class="adicionar" data-nome="Hot Dog Completo" data-preco="12.00" onclick="adicionarAoCarrinho('Hot Dog Completo', 12.00)" style="width: 130px;">
+                            COMPRAR
+                        </button>
+                    </div>
+                </div>
+            
+                <!-- Hot Dog com Calabresa -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://alloydeliveryimages.s3.sa-east-1.amazonaws.com/item_images/4070/629e879b0c901.webp" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Hot Dog com Calabresa">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Hot Dog com Calabresa</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 14,00</p>
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesHotDogCalabresa" aria-expanded="false" aria-controls="ingredientesHotDogCalabresa" style="width: 130px;" class="mb-0">
+                            Ver Ingredientes
+                        </button>
+                        <div class="collapse" id="ingredientesHotDogCalabresa">
+                            <div class="card card-body" style="text-align: left; padding: 10px;">
+                                1 salsicha, Milho, Ervilha, Calabresa moída, Catchup, Maionese, Molho especial, Batata palha, Pão
+                            </div>
+                        </div>
+                        <button class="adicionar" data-nome="Hot Dog com Calabresa" data-preco="14.00" onclick="adicionarAoCarrinho('Hot Dog com Calabresa', 14.00)" style="width: 130px;">
+                            COMPRAR
+                        </button>
+                    </div>
+                </div>
+            
+                <!-- Hot Dog com Bacon -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://meucachorroquente.com.br/wp-content/uploads/2021/12/Receitas-de-cachorro-quente-com-bacon-1200x720.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Hot Dog com Bacon">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Hot Dog com Bacon</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 14,00</p>
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesHotDogBacon" aria-expanded="false" aria-controls="ingredientesHotDogBacon" style="width: 130px;" class="mb-0">
+                            Ver Ingredientes
+                        </button>
+                        <div class="collapse" id="ingredientesHotDogBacon">
+                            <div class="card card-body" style="text-align: left; padding: 10px;">
+                                1 salsicha, Milho, Ervilha, Bacon moído, Catchup, Maionese, Molho especial, Batata palha, Pão
+                            </div>
+                        </div>
+                        <button class="adicionar" data-nome="Hot Dog com Bacon" data-preco="14.00" onclick="adicionarAoCarrinho('Hot Dog com Bacon', 14.00)" style="width: 130px;">
+                            COMPRAR
+                        </button>
+                    </div>
+                </div>
+            
+                <!-- Hot Dog Especial -->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://ipiranganews.inf.br/wp-content/uploads/SUPERAPETITE-1-23-04-24-780x470.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Hot Dog Especial">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Hot Dog Especial</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 20,00</p>
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesHotDogEspecial" aria-expanded="false" aria-controls="ingredientesHotDogEspecial" style="width: 130px;" class="mb-0">
+                            Ver Ingredientes
+                        </button>
+                        <div class="collapse" id="ingredientesHotDogEspecial">
+                            <div class="card card-body" style="text-align: left; padding: 10px;">
+                                1 salsicha, Milho, Ervilha, Bacon, Calabresa, Queijo mussarela, Catchup, Maionese, Molho especial, Alface, Tomate, Batata palha, Pão
+                            </div>
+                        </div>
+                        <button class="adicionar" data-nome="Hot Dog Especial" data-preco="20.00" onclick="adicionarAoCarrinho('Hot Dog Especial', 20.00)" style="width: 130px;">
+                            COMPRAR
+                        </button>
+                    </div>
+                </div>
+            </div>                        
+        </section>
+    </main>
+
+    <!--MAIN-->
+    <main>
+        <section>
+            <h2>Porções</h2>
+             <!--div-->
+             <div class="container-fluid">
+                <!--card-->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://www.receitasnestle.com.br/sites/default/files/srh_recipes/78dd742c3f29106731262d93ec2b2ae0.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="...">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Calabresa Acebolada</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 30,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Calabresa Acebolada', 30.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://tradicaorestaurante.com.br/wp-content/uploads/2021/12/frango-passarinho.png" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="...">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Frango a Passarinho</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 45,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Frango a Passarinho', 45.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://lakesfish.com.br/wp-content/uploads/2019/02/LF_ClickSite_LF_CliqueSite_Tilapia_Postas.png" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="...">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Tilapia em Posta</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 50,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Tilapia em Posta', 50.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+            </div>            
+        </section>
+    </main>
+
+    <!--MAIN-->
+    <main>
+        <section>
+            <h2>Caldos</h2>
+             <!--div-->
+             <div class="container-fluid">
+                <!--card-->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://p2.trrsf.com/image/fget/cf/1200/900/middle/images.terra.com/2023/06/16/711352697-tamanho-padrao-gc-2.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="...">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Kenga</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 12,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Kenga', 12.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://clubedereceitas.com.br/wp-content/uploads/2024/06/receita-de-caldo-de-mocoto.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="...">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Mocotó</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 12,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Mocotó', 12.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://i.ytimg.com/vi/oF5wjxGuo0Q/maxresdefault.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="...">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Abobrinha</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 12,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Abobrinha', 12.00)" class="btn btn"  style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+            </div>            
+        </section>
+    </main>
+
+    <!--MAIN-->
+    <main>
+        <section>
+            <h2>Salgados</h2>
+            <!--div-->
+            <div class="container-fluid">
+                <!--card-->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://offloadmedia.feverup.com/saopaulosecreto.com/wp-content/uploads/2020/06/12044459/coxinha-4161606_1920-1-e1681336148372-1024x732.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="...">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Coxinha</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 3,00 <span style="font-size: 0.8rem; color: gray;">(un)</span></p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Coxinha', 3.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://www.padariavicosa.com.br/content/images/thumbs/0000114_bolinho-de-salsicha_800.jpeg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="...">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Bolinho Salsicha</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 3,00 <span style="font-size: 0.8rem; color: gray;">(un)</span></p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Bolinho Salsicha', 3.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://i.panelinha.com.br/i1/bk-2056-bolinha-de-queijo.webp" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="...">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Bolinho Queijo</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 3,00 <span style="font-size: 0.8rem; color: gray;">(un)</span></p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Bolinho Queijo', 3.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cozinhasimples.com.br/wp-content/uploads/bolinha-de-queijo-com-presunto-cozinha-simples-780x470.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="...">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Bolinho Presunto e Queijo</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 3,00 <span style="font-size: 0.8rem; color: gray;">(un)</span></p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Bolinho Presunto e Queijo', 3.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <!--MAIN-->
+    <main>
+        <section>
+            <h2>Açai na Tijela</h2>
+            <!--div-->
+            <div class="container-fluid">
+                <!--card-->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://imagens.jotaja.com/produtos/66532257-9e99-484a-ae59-be4a11f614d7.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Açai 200 ml">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Açai 200 ml</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 8,00</p>
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesAçai200ml" aria-expanded="false" aria-controls="ingredientesAçai200ml" style="width: 130px;" class="mb-0">
+                            Ver Ingredientes
+                        </button>
+                        <div class="collapse" id="ingredientesAçai200ml">
+                            <div class="card card-body" style="text-align: left; padding: 10px;">
+                                Açaí, Leite condensado, Leite em pó
+                            </div>
+                        </div>
+                        <button class="adicionar" data-nome="Açai 200 ml" data-preco="8.00" onclick="adicionarAoCarrinho('Açai 200 ml', 8.00)" style="width: 130px;">
+                            COMPRAR
+                        </button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://static.ifood-static.com.br/image/upload/t_medium/logosgde/6eeed5e3-68c4-4c73-a7e7-1ef89fa95ddc/202109281507_nvQq_i.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Açai 350 ml">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Açai 350 ml</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 12,00</p>
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesAçai350ml" aria-expanded="false" aria-controls="ingredientesAçai350ml" style="width: 130px;" class="mb-0">
+                            Ver Ingredientes
+                        </button>
+                        <div class="collapse" id="ingredientesAçai350ml">
+                            <div class="card card-body" style="text-align: left; padding: 10px;">
+                                Açaí, Leite condensado, Leite em pó, Banana
+                            </div>
+                        </div>
+                        <button class="adicionar" data-nome="Açai 350 ml" data-preco="12.00" onclick="adicionarAoCarrinho('Açai 350 ml', 12.00)" style="width: 130px;">
+                            COMPRAR
+                        </button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://a-static.mlcdn.com.br/450x450/jogo-de-2-tacas-450ml-vidro-reforcado-sobremesa-acai-sorvete-original-line/suascomprasshop/13801664954/4ef97a1b811d91a78c91edbd8d1d6002.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Açai 450 ml">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Açai 450 ml</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 18,00</p>
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesAçai450ml" aria-expanded="false" aria-controls="ingredientesAçai450ml" style="width: 130px;" class="mb-0">
+                            Ver Ingredientes
+                        </button>
+                        <div class="collapse" id="ingredientesAçai450ml">
+                            <div class="card card-body" style="text-align: left; padding: 10px;">
+                                Açaí, Leite condensado, Leite em pó, Banana, Morango
+                            </div>
+                        </div>
+                        <button class="adicionar" data-nome="Açai 450 ml" data-preco="18.00" onclick="adicionarAoCarrinho('Açai 450 ml', 18.00)" style="width: 130px;">
+                            COMPRAR
+                        </button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_899252-MLB53300062426_012023-O.webp" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Açai 700 ml">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Açai 700 ml</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 25,00</p>
+                        <button type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesAçai700ml" aria-expanded="false" aria-controls="ingredientesAçai700ml" style="width: 130px;" class="mb-0">
+                            Ver Ingredientes
+                        </button>
+                        <div class="collapse" id="ingredientesAçai700ml">
+                            <div class="card card-body" style="text-align: left; padding: 10px;">
+                                Açaí, Leite condensado, Leite em pó, Banana, Morango, Paçoca
+                            </div>
+                        </div>
+                        <button class="adicionar" data-nome="Açai 700 ml" data-preco="25.00" onclick="adicionarAoCarrinho('Açai 700 ml', 25.00)" style="width: 130px;">
+                            COMPRAR
+                        </button>
+                    </div>
+                </div>
+            </div>                        
+        </section>
+    </main>
+
+    <!--MAIN-->
+    <main>
+        <section>
+            <h2>Sucos</h2>
+            <!--div 1 a 5-->
+            
+            <div class="container-fluid">
+                <!--card-->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://www.receiteria.com.br/wp-content/uploads/suco-de-morango-01.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="...">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Morango</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 7,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Morango', 7.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGGzFRhshzEyD4g2Yv6sfQZGfwmRs9x5LAoQ&s" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="...">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Abacaxi</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 7,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Abacaxi', 7.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://receitadelicia.com.br/wordpress/wp-content/files/receitadelicia.com.br/2023/10/suco-de-goiaba.png" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="...">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Goiaba</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 7,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Goiaba', 7.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://deliveryportodegalinhas.com.br/wp-content/uploads/2013/06/suco-de-acerola.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="...">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Acerola</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 7,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Acerola', 7.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://www.sabornamesa.com.br/media/k2/items/cache/0a785842d1965ae62a9e8464b55ef971_XL.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="...">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Manga</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 7,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Manga', 7.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--div 6 a 10-->
+            <div class="container-fluid">
+                <!--card-->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://s2-receitas.glbimg.com/nUoNlHBDl8lHba8CuQej1ecELWw=/0x0:199x254/984x0/smart/filters:strip_icc()/s.glbimg.com/po/rc/media/2013/04/28/23_37_03_588_suco_morango.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="...">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Morango c/ Leite</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 9,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Morango c/ Leite', 9.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://vitat.com.br/receitas/images/recipeshandler.jpg?id=2569&tipo=r&default=s" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="...">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Abacaxi c/ Leite</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 8,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Abacaxi c/ Leite', 8.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://vitat.com.br/receitas/images/recipeshandler.jpg?id=36763&tipo=r&default=s" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="...">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Goiaba c/ Leite</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 8,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Goiaba c/ Leite', 8.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://i.ytimg.com/vi/hnjuqAOK_uk/maxresdefault.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="...">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Acerola c/ Leite</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 8,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Acerola c/ Leite', 8.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://static1.minhavida.com.br/articles/0d/1f/8c/b2/shutterstock-549306625-orig-1.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="...">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Manga c/ Leite</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 9,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Manga c/ Leite', 9.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--MAIN-->
+    <main>
+        <section>
+            <h2>Bebidas Destiladas</h2>
+             
+            <!--div 1 a 5-->
+             <div class="container-fluid">
+                <!-- Card 1 -->
+                <div class="card" style="width: 18rem; display: inline-block; margin-right: 10px;">
+                    <img src="https://www.svicente.com.br/on/demandware.static/-/Sites-storefront-catalog-sv/default/dwc3905a4a/Produtos/33421-7896050200124-aguardente%20velho%20barreiro%20910ml-velho%20barreiro-1.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Velho Barreiro">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Velho Barreiro <span style="font-size: 0.8rem; color: gray;">(Dose)</span></h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 5,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Velho Barreiro', 5.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card" style="width: 18rem; display: inline-block; margin-right: 10px;">
+                    <img src="https://images.tcdn.com.br/img/img_prod/1209274/velho_barreiro_limao_910ml_11_1_30b08e8bb4d49d610be68614766cdec6.png" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Velho Barreiro com Limão">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Velho Barreiro c/ Limão <span style="font-size: 0.8rem; color: gray;">(Dose)</span></h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 7,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Velho Barreiro c/ Limão', 7.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card" style="width: 18rem; display: inline-block; margin-right: 10px;">
+                    <img src="https://carrefourbrfood.vtexassets.com/arquivos/ids/10980443/9393719541790.jpg?v=637417913757100000" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="51">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">51 <span style="font-size: 0.8rem; color: gray;">(Dose)</span></h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 5,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('51', 5.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card" style="width: 18rem; display: inline-block; margin-right: 10px;">
+                    <img src="https://a-static.mlcdn.com.br/470x352/51-ice-limao-275ml-marca/convenienciatropical/9307893a137211eda95f4201ac185079/24bb4981851d96f90e78685a4dcabde2.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="51 com Limão">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">51 c/ Limão <span style="font-size: 0.8rem; color: gray;">(Dose)</span></h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 7,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('51 c/ Limão', 7.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="card" style="width: 18rem; display: inline-block;">
+                    <img src="https://deskontao.agilecdn.com.br/2945_1.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Pitú">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Pitú <span style="font-size: 0.8rem; color: gray;">(Dose)</span></h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 5,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Pitú', 5.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+            </div>          
+                                
+
+            <!-- div 6 a 10 -->
+            <div class="container-fluid">
+                <!-- Card 1 -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://down-br.img.susercontent.com/file/sg-11134201-23030-ci0h7c2fl5nv56" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Pitú c/ Limão">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Pitú c/ Limão <span style="font-size: 0.8rem; color: gray;">(Dose)</span></h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 7,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Pitú c/ Limão', 7.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://m.media-amazon.com/images/I/61P7PciE76L.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Dreher">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Dreher <span style="font-size: 0.8rem; color: gray;">(Dose)</span></h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 6,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Dreher', 6.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTetCKxzYdJVqJNEfgLII0tgmZ481_EMv0oNw&s" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Dreher c/ Cacau">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Dreher c/ Cacau <span style="font-size: 0.8rem; color: gray;">(Dose)</span></h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 7,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Dreher c/ Cacau', 7.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ10MF4tswc9dCTDdxA1rmZDUOXgXtrCdJVg&s" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Dreher c/ Contini">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Dreher c/ Contini <span style="font-size: 0.8rem; color: gray;">(Dose)</span></h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 8,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Dreher c/ Contini', 8.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.tcdn.com.br/img/img_prod/584235/contini_branco_900_ml_438984431_1_53a6535390d92d80d0f22bc85bfc042a_20240118184133.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Contini">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Contini <span style="font-size: 0.8rem; color: gray;">(Dose)</span></h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 10,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Contini', 10.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <!-- Card 1 -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://adegabrooklin.com.br/wp-content/uploads/2022/11/Cachaca-Sao-Francisco-970-mlok.png" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="São Francisco">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">São Francisco <span style="font-size: 0.8rem; color: gray;">(Dose)</span></h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 7,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('São Francisco', 7.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://a-static.mlcdn.com.br/450x450/conhaque-de-alcatrao-sao-joao-da-barra-900ml-06-unidades-sao-joao-da-barra/olistplus/opm98620h7oy4sdn/74fb5e6803c358220ef4b82df0a6158b.jpeg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="São João da Barra">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">São João da Barra <span style="font-size: 0.8rem; color: gray;">(Dose)</span></h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 6,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('São João da Barra', 6.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://images.tcdn.com.br/img/img_prod/712153/vinho_rose_del_rei_1_litro_245_1_151100067aedb652883371e5a9b76b74.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Vinho Litro">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Vinho <span style="font-size: 0.8rem; color: gray;">(Litro)</span></h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 10,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Vinho Litro', 10.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://mercantilnovaera.vtexassets.com/arquivos/ids/189028/Energetico-RED-BULL-Energy-Drink-Lata-355ml.jpg?v=637699245132670000" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Red Bull Lata">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Red Bull Lata</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 15,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Red Bull Lata', 15.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://m.media-amazon.com/images/I/61R0jJKS0TL.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Jack Danilis">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Jack Danilis <span style="font-size: 0.8rem; color: gray;">(Dose)</span></h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 40,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Jack Danilis', 40.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+            </div>                        
+
+                <!-- Card 1 -->
+                <div class="container-fluid">
+                    <!-- Card 1 -->
+                    <div class="card" style="width: 18rem; margin-right: 10px;">
+                        <img src="https://s3-sa-east-1.amazonaws.com/files-sc.sigecloud.com.br/Producao/acb89948-7250-4f50-a4d1-ba636f9c1924/ImagensProdutos/64385098fe418fde5813a8e4_600x600.jpeg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Cavalo Branco">
+                        <div class="card-body" style="text-align: center;">
+                            <h5 class="card-title">Cavalo Branco <span style="font-size: 0.8rem; color: gray;">(Dose)</span></h5>
+                            <p class="card-text" style="margin-top: 20px;">R$ 25,00</p>
+                            <button class="adicionar" onclick="adicionarAoCarrinho('Caredo Branco', 25.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card" style="width: 18rem; margin-right: 10px;">
+                        <img src="https://images.tcdn.com.br/img/img_prod/774261/whisky_jhonnie_walker_red_label_750ml_3667_1_c3a21748d4b12e9111d3ba1066f5a97f.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Red Label">
+                        <div class="card-body" style="text-align: center;">
+                            <h5 class="card-title">Red Label <span style="font-size: 0.8rem; color: gray;">(Dose)</span></h5>
+                            <p class="card-text" style="margin-top: 20px;">R$ 25,00</p>
+                            <button class="adicionar" onclick="adicionarAoCarrinho('Red Label', 25.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card" style="width: 18rem; margin-right: 10px;">
+                        <img src="https://static1.efacil.com.br/wcsstore/ExtendedSitesCatalogAssetStore/Imagens/1000/900722_02.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Dry Gin">
+                        <div class="card-body" style="text-align: center;">
+                            <h5 class="card-title">Dry Gin <span style="font-size: 0.8rem; color: gray;">(Dose)</span></h5>
+                            <p class="card-text" style="margin-top: 20px;">R$ 20,00</p>
+                            <button class="adicionar" onclick="adicionarAoCarrinho('Dry Gin', 20.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="card" style="width: 18rem; margin-right: 10px;">
+                        <img src="https://images-americanas.b2w.io/produtos/7474785675/imagens/whisky-chanceler-1l/7474785675_1_xlarge.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Chanceler">
+                        <div class="card-body" style="text-align: center;">
+                            <h5 class="card-title">Chanceler <span style="font-size: 0.8rem; color: gray;">(Dose)</span></h5>
+                            <p class="card-text" style="margin-top: 20px;">R$ 15,00</p>
+                            <button class="adicionar" onclick="adicionarAoCarrinho('Chanceler', 15.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://www.arenaatacado.com.br/on/demandware.static/-/Sites-storefront-catalog-sv/default/dw06d4aa22/Produtos/918300-7898620850432-coquetel%20alcoolico%20ondrink%20old%20star%20black%201l-ondrink-2.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Old Star">
+                        <div class="card-body" style="text-align: center;">
+                            <h5 class="card-title">Old Star <span style="font-size: 0.8rem; color: gray;">(Dose)</span></h5>
+                            <p class="card-text" style="margin-top: 20px;">R$ 15,00</p>
+                            <button class="adicionar" onclick="adicionarAoCarrinho('Old Star', 15.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+    </main>
+
+    <!--MAIN-->
+    <main>
+        <section>
+            <h2>Bebidas</h2>
+            <!--div 1 a 5-->
+            <div class="container-fluid">
+                <!-- Card 1 -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://storage.googleapis.com/domain-images/0c38f198-2db6-46b9-a240-c94df814c742/products/gallery_05af6053-f2ee-42a1-b4d2-6ab32ae0f6fd.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Refrigerante Lata">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Refrigerante Lata</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 6,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Refrigerante Lata', 6.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVGQkcCBsytl5NxUrxHFRE5d6zw0HybK7Mqw&s" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Dolinho">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Dolinho</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 4,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Dolinho', 4.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://imgs.extra.com.br/1558152006/1xg.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Coca-Cola 269 ml">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Coca-Cola 269 ml</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 3,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Coca-Cola 269 ml', 3.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://biruli.com.br/cdn/shop/products/coca-cola-600ml-delivery-de-bebidas-em-cabo-frio.jpg?v=1662719301" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Coca-Cola 600 ml">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Coca-Cola 600 ml</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 8,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Coca-Cola 600 ml', 8.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://static.paodeacucar.com/img/uploads/1/992/19465992.png" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Coca-Cola 1L">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Coca-Cola 1L</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 10,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Coca-Cola 1L', 10.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+            </div>            
+
+            <!--div 6 a 8-->
+            <div class="container-fluid">
+                <!-- Card 1 -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://www.padariapampulha.com.br/wp-content/uploads/2023/12/56XXW1ipbsn8jTLDZC6dyPPMYheKU9B0i3ibE27d.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Coca-Cola 2L">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Coca-Cola 2L</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 15,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Coca-Cola 2L', 15.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://down-br.img.susercontent.com/file/3cb41e0ef155f5f87f8c32d153862888" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Sukita Laranja ou Uva">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Sukita Laranja ou Uva</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 14,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Sukita Laranja ou Uva', 14.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://tiodudistribuidora.com.br/wp-content/uploads/2024/05/dolly-1.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Dolly 2L">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Dolly 2L</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 10,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Dolly 2L', 10.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+            </div>            
+        </section>
+    </main>
+
+    <!--MAIN-->
+    <main>
+        <section>
+            <h2>Cervejas</h2>
+              <!--div 1 a 5-->
+              <div class="container-fluid">
+                <!-- Card 1 -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://www.comercialzl.com.br/image/cache/watermark/data/eftr/Img_ftr_rp_89102-1160x1160.JPG?version=20240926192454" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Itaipava Litro">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Itaipava Litro</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 12,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Itaipava Litro', 12.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://images.tcdn.com.br/img/img_prod/967276/skol_1_litro_805_1_0d46e9222d6d9bb66488db9fd08a1703.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Skol Litro">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Skol Litro</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 15,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Skol Litro', 15.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://superprix.vteximg.com.br/arquivos/ids/214180-600-600/Cerveja-Budweiser-American-Lager-330ml--Long-Neck-.jpg?v=638223449770170000" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Budweiser Long Neck">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Budweiser Long Neck</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 10,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Budweiser Long Neck', 10.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://marmoreio.com.br/wp-content/uploads/2020/05/corona-long-neck-Copia-2.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Corona Long Neck">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Corona Long Neck</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 14,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Corona Long Neck', 14.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://s3-sa-east-1.amazonaws.com/files-sc.sigecloud.com.br/Producao/acb89948-7250-4f50-a4d1-ba636f9c1924/ImagensProdutos/643ae671e3731bf6e442e6c2_800x704.jpeg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Heineken Long Neck">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Heineken Long Neck</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 12,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Heineken Long Neck', 12.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+            </div>            
+
+            <!--div 6 a 10-->
+            <div class="container-fluid">
+                <!-- Card 1 -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdjkv3ot2zJlMj0QPlJ5XjfeHD9P4jDADgZQ&s" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Skol Lata 350 ml">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Skol Lata 350 ml</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 6,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Skol Lata 350 ml', 0.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://www.davo.com.br/ccstore/v1/images/?source=/file/v2683091434786449334/products/prod_7891149103102.imagem1.jpg&height=940&width=940" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Skol Lata 269 ml">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Skol Lata 269 ml</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 5,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Skol Lata 269 ml', 5.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_720963-MLU72636830493_112023-O.webp" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Itaipava 350 ml">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Itaipava 350 ml</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 5,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Itaipava 350 ml', 5.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card" style="width: 18rem; margin-right: 10px;">
+                    <img src="https://acdn.mitiendanube.com/stores/002/236/977/products/cerveja-original-23bb75129c0739c77f17074843637038-1024-1024.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Original 269 ml">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Original 269 ml</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 5,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Original 269 ml', 5.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://static.paodeacucar.com/img/uploads/1/396/12150396.jpg" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Heineken 600 ml">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Heineken 600 ml</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 15,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Heineken 600 ml', 15.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+            </div>            
+
+            <!--div 11-->
+            <div class="container-fluid">
+                <!-- Card Skol 600 ml -->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk_udH1J7RT6qdlfd92XvgiYt8twJVIgp4-A&s" class="img-thumbnail" style="width: 18rem; height: 10rem;" alt="Skol 600 ml">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title">Skol 600 ml</h5>
+                        <p class="card-text" style="margin-top: 20px;">R$ 12,00</p>
+                        <button class="adicionar" onclick="adicionarAoCarrinho('Skol 600 ml', 12.00)" class="btn btn" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Botão do Carrinho -->
+    <button type="button" class="custom-cart-button" onclick="window.location.href='carrinho.html'">
+        <span class="icon">
+            <i class="mdi mdi-cart"></i> <!-- ícone do carrinho -->
+        </span>
+        <span class="counter" id="contador-carrinho">0</span>
+    </button>
+    
+
+
+    <!--RODAPÉ-->
+    <footer style="margin-top: auto; ">
+        <p>&copy; 2024 Lanchonete  Altas horas. Todos os direitos reservados.</p>
+    </footer>
+
+    <!--LINK-SCRIPT/Bootstrap-->
+    <script src="JS/script.js"></script>
+    <script src="JS/finalizar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

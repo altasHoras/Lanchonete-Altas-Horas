@@ -1,0 +1,50 @@
+/* Header e Navegação */
+header {
+    background: #ff0000;
+    padding: 15px;
+    text-align: center;
+    top: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 10px 10px 10px #fff;
+}
+
+header h1 {
+    font-weight: bolder;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Estilo para o item ativo */
+nav ul li a.ativo {
+    background-color: #333; /* Fundo mais escuro */
+    color: #fff; /* Cor do texto clara para contraste */
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #cc0000;
+}
+
+
+
+

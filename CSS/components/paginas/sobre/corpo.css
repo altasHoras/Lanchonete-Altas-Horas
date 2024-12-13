@@ -1,0 +1,17 @@
+.container-fluid{
+    background-color: #F0E68C;
+    margin-top: 160px;
+    margin-bottom: 190px;
+    border: solid 15px #DC143C;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    opacity: 0.6;
+}
+
+main section div:hover{
+    transition: 2s;
+    opacity: 1.0;
+}
+

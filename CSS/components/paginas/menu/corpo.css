@@ -1,0 +1,87 @@
+main{
+    margin-top: 80px;
+}
+
+main section h2 {
+    background-color: #DC143C;
+    text-align: center;
+    height: 45px;
+    margin-bottom: 0%;
+}
+
+section{
+    border-bottom: solid 20px #DC143C;
+}
+
+.container-fluid {
+    width: 100%;
+    height: auto;
+    background-color: #F0E68C;
+    border-top: solid 5px #000;
+    border-bottom: solid 5px #000;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos se ajustem em várias linhas */
+    justify-content: center; /* Centraliza os cards */
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+.card {
+    background-color: #fff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+
+
+button {
+    background-color: #FFFF00;
+    margin-top: 20px; /* Reduzi a margem para melhorar em telas menores */
+    width: 130px;
+    height: 30px;
+    border-radius: 8px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Estilos responsivos para telas menores */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%; /* Cada card vai ocupar a largura total da tela */
+        margin: 0 auto; /* Centraliza o card */
+    }
+
+    /* Ajusta as imagens */
+    .card img {
+        width: 100%;
+        height: auto; /* Ajusta proporcionalmente a altura da imagem */
+    }
+
+    button {
+        margin-top: 10px; /* Reduz a margem superior dos botões */
+    }
+
+    .container-fluid {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem; /* Ajuste o tamanho do título para telas menores */
+    }
+
+    button {
+        width: 100%; /* O botão ocupará toda a largura disponível */
+        height: 40px; /* Aumenta a altura do botão para facilitar o toque em dispositivos móveis */
+    }
+
+    .card {
+        margin: 10px 0; /* Adiciona espaçamento vertical entre os cards */
+    }
+}

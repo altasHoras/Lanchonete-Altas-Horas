@@ -1,0 +1,411 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Fundo mais neutro */
+    color: #333;
+    line-height: 1.6;
+    background-image: url(../IMG/logo.jpeg); /* Imagem de fundo */
+}
+
+/* Container principal genérico */
+.container {
+    display: flex; /* Usando Flexbox para facilitar o layout */
+    flex-direction: column; /* Coloca elementos em coluna */
+    min-height: 100vh; /* Faz com que a altura mínima do container seja 100% da viewport */
+    max-width: 700px; /* Define a largura máxima */
+    margin: 0 auto; /* Centraliza o contêiner */
+    padding: 15px; /* Espaçamento interno adequado */
+    background-color: white; /* Cor de fundo branca para o conteúdo */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    flex-grow: 1; /* Faz com que o contêiner cresça para ocupar espaço */
+}
+
+/* Títulos principais */
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px; /* Espaçamento inferior dos títulos */
+}
+
+/* Slider de Promoções */
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+/* Galeria de Imagens */
+.galeria {
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.galeria h2 {
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-container img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Seção Sobre Destaque */
+.sobre-destaque {
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.sobre-destaque h2 {
+    margin-bottom: 10px;
+}
+
+.sobre-destaque p {
+    text-align: center;
+}
+
+/* Página do Menu */
+.menu {
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.menu h2 {
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.menu-item img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.item-info h3 {
+    margin-bottom: 5px;
+}
+
+.item-info p {
+    margin-bottom: 5px;
+}
+
+.item-info span {
+    font-weight: bold;
+    color: #ff6600;
+}
+
+/* Página Sobre Nós */
+.sobre-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-conteudo img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.sobre-texto {
+    max-width: 600px;
+    margin: 10px;
+}
+
+.sobre-texto p {
+    margin-bottom: 10px;
+}
+
+/* Página de Contato */
+.contato {
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.contato h2 {
+    margin-bottom: 20px;
+}
+
+.contato-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.informacoes, .formulario {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.informacoes p, .informacoes a {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin: 5px 0 2px;
+}
+
+.formulario input, .formulario textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.formulario button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #e6b800;
+}
+
+/* Mapa */
+.mapa {
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.mapa h2 {
+    margin-bottom: 20px;
+}
+
+/* Página de Pedidos */
+.pedidos {
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.pedidos h2 {
+    margin-bottom: 20px;
+}
+
+.pedidos form {
+    display: flex;
+    flex-direction: column;
+}
+
+.pedidos label {
+    margin: 5px 0 2px;
+}
+
+.pedidos input, .pedidos select, .pedidos textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.pedidos button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.pedidos button:hover {
+    background-color: #e6b800;
+}
+
+/* Carrinho de Compras */
+.carrinho {
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.carrinho h2 {
+    margin-bottom: 20px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    padding: 10px; /* Adicione um pouco de espaço interno */
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sobre-conteudo {
+        flex-direction: column;
+    }
+
+    .contato-conteudo {
+        flex-direction: column;
+    }
+
+    .carrinho {
+        padding: 10px; /* Ajuste do padding para telas menores */
+    }
+}
+.custom-cart-button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1000; /* Define o botão para ficar acima */
+}
+
+.custom-cart-button:hover {
+    background-color: #cc0000; /* Cor ao passar o mouse */
+}
+
+.icon {
+    font-size: 24px; /* Tamanho do ícone */
+}
+
+.counter {
+    background-color: white; /* Cor de fundo do contador */
+    color: #ff0000; /* Cor do texto do contador */
+    border-radius: 50%; /* Forma redonda */
+    width: 24px; /* Largura do contador */
+    height: 24px; /* Altura do contador */
+    display: flex; /* Flexbox para centralizar o texto */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    align-items: center; /* Centraliza o texto verticalmente */
+    margin-left: 5px; /* Espaçamento à esquerda do contador */
+    font-size: 14px; /* Tamanho da fonte do contador */
+    font-weight: bold; /* Negrito para o texto */
+}
+

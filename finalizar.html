@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/finalizar.css">
+</head>
+<body>
+
+<div class="finalizar-compra">
+    <h2>Finalizar Compra</h2>
+
+    <form id="finalizarForm">
+        <div class="campo-container">
+            <input type="text" id="nome-cliente" class="campo-texto" placeholder=" " required oninvalid="this.setCustomValidity('Preencha esse campo.')" oninput="this.setCustomValidity('')">
+            <label for="nome-cliente" class="placeholder">Nome do Cliente</label>
+        </div>
+        
+        <div class="campo-container">
+            <input type="text" id="whatsapp" class="campo-texto" placeholder=" " required 
+                   oninput="formatarTelefone(this)" 
+                   oninvalid="this.setCustomValidity('Preencha esse campo corretamente.')" 
+                   oninput="this.setCustomValidity('')">
+            <label for="whatsapp" class="placeholder">WhatsApp</label>
+        </div>
+    
+            <!-- Tabela do Carrinho -->
+            <div id="lista-carrinho"></div>
+            
+            <!-- Total fora da tabela -->
+            <div class="total-pedido" id="valor-total">Total: R$ 0.00</div>
+
+            <!-- Botões para opções de finalização -->
+            <div class="botoes-finalizacao">
+                <button id="btn-entrega" onclick="mostrarOpcao('entrega')">Entrega</button>
+                <button id="btn-retirar" onclick="mostrarOpcao('retirar')">Vou retirar</button>
+                <button id="btn-consumir" onclick="mostrarOpcao('consumir')">Consumir no local</button>
+            </div>
+
+            <!-- Mensagem para a opção selecionada -->
+            <div id="opcao-selecionada" style="margin-top: 20px;"></div>
+
+            <!-- Campos para entrega -->
+            <div id="campos-entrega" style="display:none;">
+                <label>Quando será a entrega/ retirada?</label>
+                <div>
+                    <input type="radio" id="select-hoje" name="select-entrega" value="hoje" onchange="mostrarAgendamento()" checked>
+                    <label for="select-hoje">Hoje</label>
+            
+                    <input type="radio" id="select-agendar" name="select-entrega" value="agendar" onchange="mostrarAgendamento()">
+                    <label for="select-agendar">Agendar</label>
+                </div>
+            
+                <div id="agendar-campo" style="display:none;">
+                    <label>Data de agendamento:</label>
+                    <input type="date" id="data-agendamento" required>
+                    <label>Horário:</label>
+                    <select id="horario-agendamento" required>
+                        <!-- As opções de horário serão preenchidas pelo JavaScript -->
+                    </select>
+                </div>
+                <br>
+            
+                <div id="endereco-campo">
+                    <div class="campo-container">
+                        <input type="text" class="campo-texto" id="bairro" placeholder=" " required>
+                        <label for="bairro" class="placeholder">Bairro</label>
+                    </div>
+                    <div class="campo-container">
+                        <input type="text" class="campo-texto" id="logradouro" placeholder=" " required>
+                        <label for="logradouro" class="placeholder">Rua/ Logradouro / Avenida</label>
+                    </div>
+                    <div class="campo-container">
+                        <input type="text" class="campo-texto" id="numero" placeholder=" " required>
+                        <label for="numero" class="placeholder">Nº da casa</label>
+                    </div>
+                    <div class="campo-container">
+                        <input type="text" class="campo-texto" id="referencia" placeholder=" ">
+                        <label for="referencia" class="placeholder">Ponto de referência</label>
+                    </div>
+                    <div class="campo-container">
+                        <input type="text" class="campo-texto" id="observacao" placeholder=" ">
+                        <label for="observacao" class="placeholder">Observação</label>
+                    </div>
+                </div>
+            
+                <div>
+                    <label>Tipo de residência:</label>
+                    <select id="tipo-residencia">
+                        <option value="casa">Casa</option>
+                        <option value="apartamento">Apartamento</option>
+                        <option value="trabalho">Trabalho</option>
+                    </select>
+                </div>
+            
+                <label>Forma de pagamento:</label>
+                <select id="forma-pagamento" required>
+                    <option value="Dinheiro">Dinheiro</option>
+                    <option value="Credito">Cartão de Crédito</option>
+                    <option value="Debito">Cartão de Débito</option>
+                    <option value="Pix">Pix</option>
+                </select>
+                <br><br>
+            
+                <button type="submit" onclick="enviarPedido()" class="campo-texto">Enviar</button>
+            </div>
+            
+            
+            <!-- Campos para retirada -->
+            <div id="retirada-campo" style="display:none;">
+                <label>Quando será a retirada:</label>
+                <div>
+                    <input type="radio" id="opcao-agora" name="opcao-retirada" value="agora" onchange="mostrarAgendamentoRetirada()" checked>
+                    <label for="opcao-agora">Hoje</label>
+                    
+                    <input type="radio" id="opcao-agendar" name="opcao-retirada" value="agendar" onchange="mostrarAgendamentoRetirada()">
+                    <label for="opcao-agendar">Agendar</label>
+                </div>
+            
+                <div id="agendar-retirada" style="display:none;">
+                    <label>Data de agendamento:</label>
+                    <input type="date" id="data-retirada" required>
+                    <label>Horário:</label>
+                    <select id="horario-retirada" required>
+                        <!-- As opções de horário serão preenchidas pelo JavaScript -->
+                    </select>
+                </div>
+                <br>
+            
+                <label>Forma de pagamento:</label>
+                <select id="forma-pagamento">
+                    <option value="Dinheiro">Dinheiro</option>
+                    <option value="Credito">Cartão de Crédito</option>
+                    <option value="Debito">Cartão de Débito</option>
+                    <option value="Pix">Pix</option>
+                </select>
+                <br>
+                
+                <button type="submit" onclick="enviarPedidoRetirada()" class="campo-texto">Enviar</button>
+            </div>
+                
+            <!-- Campos para consumir no local -->
+            <div id="consumir-campo" style="display:none;">
+                <label>Quando você deseja consumir aqui?</label>
+                <div>
+                    <input type="radio" id="opcao-hoje" name="opcao-consumo" value="hoje" onchange="mostrarAgendamentoConsumo()" checked>
+                    <label for="opcao-hoje">Hoje</label>
+                    
+                    <input type="radio" id="opcao-agendar" name="opcao-consumo" value="agendar" onchange="mostrarAgendamentoConsumo()">
+                    <label for="opcao-agendar">Agendar</label>
+                </div>
+            
+                <div id="agendar-consumo" style="display:none;">
+                    <label>Data de agendamento:</label>
+                    <input type="date" id="data-consumo" required>
+                    <label>Horário:</label>
+                    <select id="horario-consumo" required>
+                        <!-- As opções de horário serão preenchidas pelo JavaScript -->
+                    </select>
+                </div>
+                <br>
+            
+                <label>Forma de pagamento:</label>
+                <select id="forma-pagamento">
+                    <option value="Dinheiro">Dinheiro</option>
+                    <option value="Credito">Cartão de Crédito</option>
+                    <option value="Debito">Cartão de Débito</option>
+                    <option value="Pix">Pix</option>
+                </select>
+                <br>
+            
+                <button type="submit" onclick="enviarPedidoConsumo()" class="campo-texto">Enviar</button>
+            </div>
+    </form>    
+            <br>
+            <a href="carrinho.html">
+                <button style="background-color: #b85c5c !important;">
+                    Cancelar Compra
+                </button>
+            </a>
+        </div>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Lanchonete  Altas horas. Todos os direitos reservados.</p>
+    </div>
+</footer>
+<!-- Aqui vai o JavaScript -->
+<script src="JS/script.js"></script>
+<script src="JS/finalizar.js"></script>
+</body>
+</html>

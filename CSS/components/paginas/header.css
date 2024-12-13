@@ -1,0 +1,54 @@
+/* Header e Navegação */
+header {
+    background: #ff0000;
+    padding: 5px;
+    text-align: center;
+    top: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra sutil para o cabeçalho */
+}
+
+header h1 {
+    font-weight: bolder;
+    color: #fff; /* Cor do título */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0; /* Remove o padding padrão */
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 5px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Cor padrão do texto do link */
+    font-weight: bold;
+    padding: 10px 15px; /* Espaçamento interno para o link */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave para o fundo e cor */
+}
+
+/* Estilo para o item ativo */
+nav ul li a.ativo {
+    background-color: #333; /* Fundo mais escuro para o item ativo */
+    color: #fff; /* Cor do texto clara para contraste */
+}
+
+/* Efeito de hover */
+nav ul li a:hover {
+    background-color: #cc0000; /* Muda a cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto clara no hover */
+}
+
+h2 {
+    background-color: #DC143C;
+    text-align: center;
+    height: 45px;
+    margin-bottom: 0%;
+    box-shadow: 10px 10px 10px #fff;
+}

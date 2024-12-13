@@ -1,0 +1,186 @@
+.finalizar-compra {
+    width: 80% !important; /* Adicionando !important */
+    margin: auto !important; /* Adicionando !important */
+    padding: 20px !important; /* Adicionando !important */
+    border: 2px solid #ff0000 !important; /* Adicionando !important */
+    border-radius: 10px !important; /* Adicionando !important */
+    background-color: #f9f9f9 !important; /* Adicionando !important */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1) !important; /* Adicionando !important */
+}
+
+h2 {
+    text-align: center !important; /* Adicionando !important */
+    margin-bottom: 20px !important; /* Adicionando !important */
+}
+
+#lista-carrinho {
+    margin: 0 auto !important; /* Adicionando !important */
+    width: 100% !important; /* Adicionando !important */
+    overflow-x: auto !important; /* Adicionando !important */
+}
+
+.tabela-finalizar {
+    width: 100% !important; /* Adicionando !important */
+    max-width: 100% !important; /* Adicionando !important */
+    border-collapse: collapse !important; /* Adicionando !important */
+    margin-top: 20px !important; /* Adicionando !important */
+}
+
+.tabela-finalizar th, .tabela-finalizar td {
+    padding: 10px !important; /* Adicionando !important */
+    border: 1px solid #ccc !important; /* Adicionando !important */
+    text-align: center !important; /* Adicionando !important */
+}
+
+.tabela-finalizar th {
+    background-color: #f2f2f2 !important; /* Adicionando !important */
+    font-weight: bold !important; /* Adicionando !important */
+}
+
+/* Ajuste os estilos de th e td para garantir o alinhamento */
+.tabela-finalizar th, .tabela-finalizar td {
+    vertical-align: middle !important; /* Adicionando !important */
+    height: 40px !important; /* Adicionando !important */
+}
+
+.total-pedido {
+    font-size: 20px !important; /* Adicionando !important */
+    font-weight: bold !important; /* Adicionando !important */
+    text-align: right !important; /* Adicionando !important */
+    margin-top: 20px !important; /* Adicionando !important */
+}
+
+.botoes-finalizacao {
+    display: flex !important; /* Adicionando !important */
+    flex-direction: column !important; /* Adicionando !important */
+    align-items: center !important; /* Adicionando !important */
+    margin-top: 20px !important; /* Adicionando !important */
+}
+
+button {
+    background-color: #5cb85c !important; /* Adicionando !important */
+    color: white !important; /* Adicionando !important */
+    padding: 10px !important; /* Adicionando !important */
+    border: none !important; /* Adicionando !important */
+    border-radius: 5px !important; /* Adicionando !important */
+    cursor: pointer !important; /* Adicionando !important */
+    width: 100% !important; /* Adicionando !important */
+    max-width: 300px !important; /* Adicionando !important */
+    margin: 5px 0 !important; /* Adicionando !important */
+}
+
+button:hover {
+    background-color: #4cae4c !important; /* Adicionando !important */
+}
+
+#opcao-selecionada {
+    margin-top: 20px !important; /* Adicionando !important */
+    font-size: 18px !important; /* Adicionando !important */
+    text-align: center !important; /* Adicionando !important */
+}
+
+#form-entrega {
+    margin-top: 20px !important; /* Adicionando !important */
+}
+
+#form-entrega label {
+    display: block !important; /* Adicionando !important */
+    margin: 10px 0 5px !important; /* Adicionando !important */
+}
+
+#form-entrega input {
+    width: 100% !important; /* Adicionando !important */
+    padding: 8px !important; /* Adicionando !important */
+    margin-bottom: 10px !important; /* Adicionando !important */
+    border: 1px solid #ccc !important; /* Adicionando !important */
+    border-radius: 5px !important; /* Adicionando !important */
+}
+
+/* Estilo para os novos elementos */
+#opcoes-entrega {
+    display: none !important; /* Adicionando !important */
+    margin-top: 20px !important; /* Adicionando !important */
+}
+
+#opcoes-agendar {
+    display: none !important; /* Adicionando !important */
+    margin-top: 20px !important; /* Adicionando !important */
+}
+
+#btn-mapa {
+    width: 100% !important; /* Adicionando !important */
+    margin: 0 auto !important; /* Adicionando !important */
+    display: block !important; /* Adicionando !important */
+}
+
+.campo-container {
+    position: relative !important; /* Adicionando !important */
+    margin-bottom: 20px !important; /* Adicionando !important */
+}
+
+.campo-texto {
+    width: 100% !important; /* Adicionando !important */
+    padding: 12px 10px !important; /* Adicionando !important */
+    font-size: 16px !important; /* Adicionando !important */
+    border: 1px solid #ccc !important; /* Adicionando !important */
+    border-radius: 5px !important; /* Adicionando !important */
+    transition: border-color 0.3s !important; /* Adicionando !important */
+}
+
+.campo-texto:focus {
+    border-color: #5cb85c !important; /* Adicionando !important */
+    outline: none !important; /* Adicionando !important */
+}
+
+/* Estilo para o placeholder que se move */
+.placeholder {
+    position: absolute !important; /* Adicionando !important */
+    left: 10px !important; /* Adicionando !important */
+    top: 10px !important; /* Adicionando !important */
+    transition: 0.2s ease all !important; /* Adicionando !important */
+    pointer-events: none !important; /* Adicionando !important */
+    color: #aaa !important; /* Adicionando !important */
+    background-color: #f9f9f9 !important; /* Adicionando !important */
+}
+
+.campo-texto:focus + .placeholder,
+.campo-texto:not(:placeholder-shown) + .placeholder {
+    top: -10px !important; /* Adicionando !important */
+    left: 10px !important; /* Adicionando !important */
+    font-size: 12px !important; /* Adicionando !important */
+    color: #5cb85c !important; /* Adicionando !important */
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    .botoes-finalizacao {
+        flex-direction: column !important; /* Adicionando !important */
+    }
+
+    button {
+        width: 100% !important; /* Adicionando !important */
+        max-width: none !important; /* Adicionando !important */
+    }
+
+    .finalizar-compra {
+        width: 95% !important; /* Adicionando !important */
+    }
+
+    .campo-texto {
+        font-size: 14px !important; /* Adicionando !important */
+    }
+
+    .total-pedido {
+        font-size: 18px !important; /* Adicionando !important */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px !important; /* Adicionando !important */
+    }
+
+    .campo-texto {
+        padding: 10px !important; /* Adicionando !important */
+    }
+}
